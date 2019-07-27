@@ -1,9 +1,10 @@
 package com.devraj.dp.knapsack_0_1;
 
 // This can be solved using following recursion based method:
-// 1) Select current index element and then recurse. 
+// 1) Select current index element, if current capacity doesn't exceed max and then recurse.
 // 2) Don't select current element and then recurse.
-// 3) Return max of three.
+// 3) Return max of two.
+// Time will be exponential : O(2^n)
 public class RecursionBased {
 
     static int knapsack0_1(int[] w, int[] profits, int max_cap, int curr_cap, int curr_index) {
